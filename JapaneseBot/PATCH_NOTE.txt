@@ -1,0 +1,10 @@
+    // Add this static instance field and getter at the top of QuotexAccessibilityService class
+    // (already handled below — this is the patch file)
+    // The ScanReceiver calls QuotexAccessibilityService.getInstance().performScan()
+    // So we need a static instance
+
+    // In QuotexAccessibilityService.java, add:
+    private static QuotexAccessibilityService instance;
+    public static QuotexAccessibilityService getInstance() { return instance; }
+    // And in onServiceConnected: instance = this;
+    // And in onUnbind: instance = null;

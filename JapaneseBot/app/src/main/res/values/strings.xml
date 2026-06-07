@@ -1,0 +1,5 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <string name="app_name">Japanese Bot</string>
+    <string name="accessibility_description">Quotex screen read karke FX/OTC signals deta hai</string>
+</resources>
